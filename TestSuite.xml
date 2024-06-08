@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" name="Douglas">
+  <listeners>
+    <listener class-name="com.dnt.douglas.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="PROJECT_Test1">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.dnt.douglas.loginpage.scripts.Product_Filter"/>
+    </classes>
+  </test> 
+</suite> 
